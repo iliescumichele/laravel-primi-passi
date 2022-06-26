@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'parola' => 'LARAVEL'
+    ];
+
+    return view('home', $data);
 });
